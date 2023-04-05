@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing">
+      <view>
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <image class="swiper-img" src="{{item}}" mode="scaleToFill"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+      <view class="category-container">
+        <view class="common-style category-box">
+          <view class="category-list" wx:for="{{categories}}" wx:key="id">
+            <view class="category-column" bindtap="tabClick" data-id="{{item.id}}">
+              <image mode="aspectFill" class="category-imgbox" src="{{item.icon}}"></image>
+              <view>
+                <view class="category-order-type">
+                  {{item.orderType}}
+                </view>
+                <view class="category-text-desc">
+                  {{item.desc}}
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="common-style login-status-container">
+        <view class="new-friends">
+          <view>
+            <view class="new-friends-text">
+              HI 欢迎新朋友~
+            </view>
+            <view class="new-friends-gift">
+              入会立即6元礼包
+            </view>
+          </view>
+          <view>
+            <button class="login-btn" type="primary" plain="true" size="mini">注册/登录</button>
+          </view>
+        </view>
+        <view class="nav-2">
+          <view wx:for="{{nav2List}}" wx:key="id">
+            <view>
+              <image class="nav-2-icon" src="{{item.icon}}"></image>
+              <text> {{item.name}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      
+
+
+    </view>
+  </view>
+</view>
+

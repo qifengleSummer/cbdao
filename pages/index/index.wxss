@@ -1,0 +1,100 @@
+/**index.wxss**/
+.container {
+  clear: both;
+  height: 100%;
+  font-size: 12px;
+}
+.page-body {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.page-body .swiper {
+  width: 750rpx;
+  height: 375rpx;
+}
+
+.page-body .swiper .swiper-img {
+  width: 750rpx;
+  height: 375rpx;
+}
+
+.common-style {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px; 
+}
+
+.category-container {
+  height: 150rpx;
+ 
+}
+.category-box {
+  position: absolute;
+  top: 25%;
+  right: 0rpx;
+  left: 0rpx;
+  display: flex;
+  justify-content: space-around;  
+  padding: 40rpx 0;
+}
+
+.category-column {
+  width: 100%;
+  display: flex;
+  color: #1f2428;
+}
+
+.category-imgbox {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.category-order-type {
+  font-weight: bold;
+  color: #0748b5;
+  font-size: 16px;
+  margin-bottom: 20rpx;
+}
+
+.login-status-container {
+  padding: 40rpx 0;
+}
+.login-status-container .new-friends {
+  display: flex;
+  padding: 10rpx 30rpx 30rpx;
+  justify-content: space-between;
+}
+.login-status-container .new-friends-text{
+  font-size: 14px;
+}
+.login-status-container .new-friends-gift{
+  color: #003d9b;
+  margin-top: 10rpx;
+}
+.login-status-container .nav-2{
+  display: flex;
+  justify-content: space-between;
+}
+.login-status-container .login-btn {
+  margin-top: 8rpx;
+  font-weight: normal;
+  color: #003d9b !important;
+  border-color: #003d9b !important;
+  border-radius: 25px;
+  font-size: 12px;
+  padding: 2rpx 36rpx;
+}
+
+.nav-2 {
+  text-align: center;
+  margin: 0 30rpx;
+  border-top: 1rpx solid #eeedee;
+}
+.nav-2-icon {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin: 40rpx auto 20rpx;
+
+}
