@@ -26,14 +26,11 @@
 }
 
 .category-container {
-  height: 150rpx;
+  position: relative;
+  margin-top: -7%;
  
 }
 .category-box {
-  position: absolute;
-  top: 25%;
-  right: 0rpx;
-  left: 0rpx;
   display: flex;
   justify-content: space-around;  
   padding: 40rpx 0;
@@ -51,7 +48,7 @@
   margin-right: 20rpx;
 }
 .category-order-type {
-  font-weight: bold;
+  font-weight: bolder;
   color: #0748b5;
   font-size: 16px;
   margin-bottom: 20rpx;
@@ -96,5 +93,12 @@
   height: 50rpx;
   display: block;
   margin: 40rpx auto 20rpx;
-
+}
+.more-dd {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+.nav-3 image{
+  width: 100%
 }

@@ -56,9 +56,15 @@
         </view>
       </view>
 
-      
-
-
+       <!-- title-more -->
+       <view>
+          <title-more></title-more>
+          <view class="nav-3">
+            <view wx:for="{{nav2List}}" wx:key="id">
+              <image class="more-dd" src="https://ts1.cn.mm.bing.net/th/id/R-C.5a49085e4afe4261c8994e7b2ad91842?rik=VxQQBSuFk%2f%2ftaA&riu=http%3a%2f%2fimg.pconline.com.cn%2fimages%2fbbs4%2f200810%2f17%2f1224206085128.jpg&ehk=QaHcMJfNlSmAGrzRh6DkCiRkBlEs9J5Tw95WfADpO9E%3d&risl=&pid=ImgRaw&r=0"></image>
+            </view>
+          </view>
+        </view>
     </view>
   </view>
 </view>

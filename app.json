@@ -1,15 +1,17 @@
 {
-  "pages":[
-    "pages/index/index",    
+  "pages": [
+    "pages/index/index",
     "pages/order/order",
     "pages/ordersList/orderList",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/citySelector/citySelector"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#cbcbcb",
@@ -42,5 +44,29 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "plugins": {
+    "citySelector": {
+         "version": "1.0.2",
+         "provider": "wx63ffb7b7894e99ae"
+     },
+    "chooseLocation": {
+      "version": "1.0.10",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getFuzzyLocation",
+    "chooseLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    },
+    "scope.userFuzzyLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+      
+  }
 }

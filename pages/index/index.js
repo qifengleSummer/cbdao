@@ -11,9 +11,9 @@ Page({
 
   data: {
     background: [
-      '../../assets/img/homePage/banner1.jpg',
-       '../../assets/img/homePage/banner2.jpg',
-        '../../assets/img/homePage/banner3.jpg'],
+      'https://img.zcool.cn/community/01ae385c31a38aa80121df90a70d6f.jpg@3000w_1l_0o_100sh.jpg',
+      'https://tse2-mm.cn.bing.net/th/id/OIP-C.NHFj8ekQR5__V2MyK8U9hgHaE8?pid=ImgDet&rs=1',
+      'https://tse2-mm.cn.bing.net/th/id/OIP-C.WaON72rYgJf0_ua-LdTuDQHaFj?pid=ImgDet&rs=1'],
     indicatorDots: true,
     vertical: false,
     autoplay: false,

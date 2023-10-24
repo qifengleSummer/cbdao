@@ -1,2 +1,31 @@
 <!--pages/order.wxml-->
-<text>pages/order.wxml</text>
+<view class="order-page">
+  <navigation></navigation>
+  <view>
+    <view class="bar-list-container">
+      <view wx:for="{{barList}}" wx:key="index" id="{{item.index}}" bindtap="swichNav" class="{{currentTab == index ? 'bar-active' : ''}}">
+        <text>{{item.title}}</text>
+        <view class="hover-line"></view>
+      </view>
+    </view>
+    <view class="search-line-container">
+      <view class="search-line-left">
+        <view class="location-search">
+          <view bindtap="chooseArea" class="choose-area">
+            <text>{{currentLocation.title}}</text>
+            <text class="triangle"></text>
+            <text class="line"></text>
+          </view>
+          <icon class="location-search-icon icon-small" type="search" size="14"></icon>
+          <text bindtap="searchMapLocation">搜索门店</text>
+        </view>
+      </view>
+      <text class="show-map-text" bindtap="showMap" wx:if="{{isShowMap === false}}"> 查看地图 </text>
+    </view>
+  </view>
+  <map class="map-elem show-map {{isShowMap ? '':'hide-map'}}"></map>
+  <view class="hide-map-text {{isShowMap ? '':'hide-map'}}" bindtap="hideMap">
+    <text>收起地图</text>
+    <view class="hide-map-icon"> > </view>
+  </view>
+</view>

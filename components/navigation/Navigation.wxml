@@ -1,0 +1,4 @@
+<!--components/navigation/Navigation.wxml-->
+<view class="navigation-container">
+  <text>选择门店</text>
+</view>

@@ -1,0 +1,6 @@
+<!--components/titleMore/TitleMore.wxml-->
+<view class="title-more-container">
+  <text>丁丁猫新鲜事</text>
+
+  <text>更多></text>
+</view>

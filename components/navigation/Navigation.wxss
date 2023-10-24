@@ -1,0 +1,5 @@
+/* components/navigation/Navigation.wxss */
+.navigation-container {
+  margin-top: 10%;
+  padding-left: 1rem;
+}
